@@ -10,7 +10,7 @@
     <meta name="author" content="Ecology Theme">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VLOOKJOB</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/vlookjob.ico" type="image/x-icon">
     <!-- Goole Font -->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
@@ -128,7 +128,7 @@
                                 <li class="nav-item"><a href="forgot-password.html" class="nav-link">Forgot Password</a></li>
                             </ul>                            
                         </li>     
-                        <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link active">Career Quiz</a></li>
                     </ul>
                 </div>
                 <div class="mr-auto search_area ">
@@ -152,10 +152,10 @@
             <div class="row">        
                  <div class="col-sm-12 col-md-8 col-lg-8">
                     <div class="intro_text">
-                        <h1>Contact Page</h1>
+                        <h1>Career Quiz</h1>
                         <div class="pages_links">
                             <a href="#" title="">Home</a>
-                            <a href="#" title="" class="active">Contact Details</a>
+                            <a href="#" title="" class="active">Career Quiz</a>
                         </div>
                     </div>
                 </div>              
@@ -164,7 +164,359 @@
     </div> 
 </header> <!-- End Header -->
 
+<section class="quiz_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="quiz_title">
+                    <h2>Career Quiz</h2>
+                    <p>Discover your personality type through this career quiz.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="quiz_main_box">
+            <div class="quiz_form">
+                <form action="quiz_process.php" method="post" id="main_quiz_form">
+                    <!-- Start of Quiz Questions -->
+                    <div class="form-group">
+                        <label for="question1">1. Bạn thích tham gia các sự kiện xã hội.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question1" id="q1a1" value="E" required>
+                            <label class="form-check-label" for="q1a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question1" id="q1a2" value="A" required>
+                            <label class="form-check-label" for="q1a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question1" id="q1a3" value="N" required>
+                            <label class="form-check-label" for="q1a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question1" id="q1a4" value="D" required>
+                            <label class="form-check-label" for="q1a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question1" id="q1a5" value="I" required>
+                            <label class="form-check-label" for="q1a5">Strongly Disagree</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="question2">2. Bạn thường dựa vào cảm giác của mình hơn là lý trí.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question2" id="q2a1" value="S" required>
+                            <label class="form-check-label" for="q2a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question2" id="q2a2" value="A" required>
+                            <label class="form-check-label" for="q2a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question2" id="q2a3" value="N" required>
+                            <label class="form-check-label" for="q2a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question2" id="q2a4" value="D" required>
+                            <label class="form-check-label" for="q2a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question2" id="q2a5" value="N" required>
+                            <label class="form-check-label" for="q2a5">Strongly Disagree</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="question3">3. Bạn thường quyết định dựa trên cảm xúc.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question3" id="q3a1" value="F" required>
+                            <label class="form-check-label" for="q3a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question3" id="q3a2" value="A" required>
+                            <label class="form-check-label" for="q3a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question3" id="q3a3" value="N" required>
+                            <label class="form-check-label" for="q3a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question3" id="q3a4" value="D" required>
+                            <label class="form-check-label" for="q3a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question3" id="q3a5" value="T" required>
+                            <label class="form-check-label" for="q3a5">Strongly Disagree</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="question4">4. Bạn không thích sự thay đổi.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question4" id="q5a1" value="E" required>
+                            <label class="form-check-label" for="q5a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question4" id="q5a2" value="A" required>
+                            <label class="form-check-label" for="q5a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question4" id="q5a3" value="N" required>
+                            <label class="form-check-label" for="q5a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question4" id="q5a4" value="D" required>
+                            <label class="form-check-label" for="q5a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question4" id="q5a5" value="I" required>
+                            <label class="form-check-label" for="q5a5">Strongly Disagree</label>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                        <label for="question5">5. Bạn cảm thấy thoải mái khi giao tiếp với người lạ.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question5" id="q5a1" value="E" required>
+                            <label class="form-check-label" for="q5a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question5" id="q5a2" value="A" required>
+                            <label class="form-check-label" for="q5a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question5" id="q5a3" value="N" required>
+                            <label class="form-check-label" for="q5a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question5" id="q5a4" value="D" required>
+                            <label class="form-check-label" for="q5a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question5" id="q5a5" value="I" required>
+                            <label class="form-check-label" for="q5a5">Strongly Disagree</label>
+                        </div>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="question6">6. Thi thoảng bạn gặp khó khăn khi đối mặt với thông tin mới vì nó không tương đồng với cách suy nghĩ cá nhân của bạn.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question6" id="q5a1" value="E" required>
+                            <label class="form-check-label" for="q5a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question6" id="q5a2" value="A" required>
+                            <label class="form-check-label" for="q5a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question6" id="q5a3" value="N" required>
+                            <label class="form-check-label" for="q5a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question6" id="q5a4" value="D" required>
+                            <label class="form-check-label" for="q5a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question6" id="q5a5" value="I" required>
+                            <label class="form-check-label" for="q5a5">Strongly Disagree</label>
+                        </div>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="question7">7. Bạn hào hứng bắt đầu một dự án chỉ để gác chúng lại một khi nó không còn cảm thấy mới mẻ với bạn nữa.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question7" id="q5a1" value="E" required>
+                            <label class="form-check-label" for="q5a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question7" id="q5a2" value="A" required>
+                            <label class="form-check-label" for="q5a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question7" id="q5a3" value="N" required>
+                            <label class="form-check-label" for="q5a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question7" id="q5a4" value="D" required>
+                            <label class="form-check-label" for="q5a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question7" id="q5a5" value="I" required>
+                            <label class="form-check-label" for="q5a5">Strongly Disagree</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="question8">8. Bạn sống nghiêm ngặt theo chuẩn mực đạo đức của bản thân, không ảnh hưởng bởi ý kiến người ngoài.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question8" id="q5a1" value="E" required>
+                            <label class="form-check-label" for="q5a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question8" id="q5a2" value="A" required>
+                            <label class="form-check-label" for="q5a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question8" id="q5a3" value="N" required>
+                            <label class="form-check-label" for="q5a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question8" id="q5a4" value="D" required>
+                            <label class="form-check-label" for="q5a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question8" id="q5a5" value="I" required>
+                            <label class="form-check-label" for="q5a5">Strongly Disagree</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="question9">9. Bạn là một người động não: bạn có thể đề ra vô số ý tưởng khác nhau tùy vào từng tình huống.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question9" id="q5a1" value="E" required>
+                            <label class="form-check-label" for="q5a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question9" id="q5a2" value="A" required>
+                            <label class="form-check-label" for="q5a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question9" id="q5a3" value="N" required>
+                            <label class="form-check-label" for="q5a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question9" id="q5a4" value="D" required>
+                            <label class="form-check-label" for="q5a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question9" id="q5a5" value="I" required>
+                            <label class="form-check-label" for="q5a5">Strongly Disagree</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="question10">10. Bạn học hỏi từ những kinh nghiệm đã trải qua để đưa ra kết luận và thấu hiểu những trải nghiệm, ý tưởng mới.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question10" id="q5a1" value="E" required>
+                            <label class="form-check-label" for="q5a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question10" id="q5a2" value="A" required>
+                            <label class="form-check-label" for="q5a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question10" id="q5a3" value="N" required>
+                            <label class="form-check-label" for="q5a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question10" id="q5a4" value="D" required>
+                            <label class="form-check-label" for="q5a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question10" id="q5a5" value="I" required>
+                            <label class="form-check-label" for="q5a5">Strongly Disagree</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="question11">11. Bạn thích bay bổng và sống trong mơ hơn là đời thực.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question11" id="q5a1" value="E" required>
+                            <label class="form-check-label" for="q5a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question11" id="q5a2" value="A" required>
+                            <label class="form-check-label" for="q5a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question11" id="q5a3" value="N" required>
+                            <label class="form-check-label" for="q5a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question11" id="q5a4" value="D" required>
+                            <label class="form-check-label" for="q5a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question11" id="q5a5" value="I" required>
+                            <label class="form-check-label" for="q5a5">Strongly Disagree</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="questio12">12. Bạn có thể dễ dàng nghĩ ra một cái gì đó ngẫu nhiên để nói.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question12" id="q5a1" value="E" required>
+                            <label class="form-check-label" for="q5a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question12" id="q5a2" value="A" required>
+                            <label class="form-check-label" for="q5a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question12" id="q5a3" value="N" required>
+                            <label class="form-check-label" for="q5a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question12" id="q5a4" value="D" required>
+                            <label class="form-check-label" for="q5a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question12" id="q5a5" value="I" required>
+                            <label class="form-check-label" for="q5a5">Strongly Disagree</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="question13">13. Bạn điều chỉnh cách làm việc để tối ưu hóa hiệu suất.</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question13" id="q5a1" value="E" required>
+                            <label class="form-check-label" for="q5a1">Strongly Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question13" id="q5a2" value="A" required>
+                            <label class="form-check-label" for="q5a2">Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question13" id="q5a3" value="N" required>
+                            <label class="form-check-label" for="q5a3">Neutral</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question13" id="q5a4" value="D" required>
+                            <label class="form-check-label" for="q5a4">Disagree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="question13" id="q5a5" value="I" required>
+                            <label class="form-check-label" for="q5a5">Strongly Disagree</label>
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label for="question14">14. Bạn được mọi người mô tả là người như nào</label>
+                        <input type="text" class="form-control" id="question14" name="question14" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="question15">15. Hãy mô tả một công việc mà bạn cảm thấy hứng thú</label>
+                        <input type="text" class="form-control" id="question15" name="question15" placeholder="Ví dụ: Mức lương, phúc lợi, môi trường làm việc, lĩnh vực" required>
+                    </div>
+                    
+                    <!-- <form action="submit.html" method="post">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                     -->
+                    <!-- <form id="quizForm" action="result.html" method="post">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form> -->
+                    <!-- <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div> -->
+                </form>
+            </div>
+        </div>
+        <div class="outside_form">
+            <a href="submit.html" class="btn btn-primary">Submit</a>
+        </div>
+    </div>
+</section>
 
 <section class="login_signup_option">
     <div class="l-modal is-hidden--off-flow js-modal-shopify">

@@ -5735,3 +5735,16 @@ footer {
                 box-shadow: 5px 9px 49px 0px rgba(47, 47, 47, 0.08);
         height: 420px;
         width: 370px; }
+.form-group label {
+    color: black;
+}
+.form-group .form-check {
+  display: block;
+  align-items: center; 
+  margin-right: 10px;
+}
+
+
+
+
+
